@@ -1,5 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Image from "next/image";
+
+//initialized a Todo type
+type Todo = {
+  id: number;
+  text: string;
+  completed: boolean;
+};
 
 export default function Home() {
   //initialized a variable for useState, and added a counter
